@@ -89,7 +89,7 @@
             </div>
             <div class="card-group">
             <div class="col-12 col-sm-6 col-md-3">
-                <div class="card">
+                <div class="card h-100">
                     <img class="card-img-top" src="./img/baiBalazs_port.jpg" alt="Dr. Baji Balázs" title="Bai Balázs">
                     <div class="card-body">
                     <h4 class="card-title">Dr. Baji Balázs</h4>
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-3">
-                <div class="card">
+                <div class="card h-100">
                     <img class="card-img-top" src="./img/martonAnita_port.jpg" alt="Marton Anita" title="Marton Anita">
                     <div class="card-body">
                     <h4 class="card-title">Marton Anita</h4>
@@ -109,7 +109,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-3">
-                <div class="card">
+                <div class="card h-100">
                     <img class="card-img-top" src="./img/farkasGyorgyi_port.jpg" alt="Farkas Györgyi" title="Farkas Györgyi">
                     <div class="card-body">
                     <h4 class="card-title">Zsivoczky-Farkas Györgyi</h4>
@@ -118,7 +118,18 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./img/kirzsanXenia_port.jpg" alt="Dr. Baji Balázs" title="Bai Balázs">
+                    <div class="card-body">
+                    <h4 class="card-title">Krizsán Xénia</h4>
+                    <p class="card-text">A 28 éves többpróbázó a 2018-as fedett pályás atlétikai világbajnokságon ötpróbában hatodik lett. Még ebben az évben nyáron a szabadtéri  EB-n hétpróbában 7. lett, miközben a 800 méteres síkfutó számát megnyerte. Az idei fedett pályás Európa-bajnokságon bronzérmet szerzett ötpróbában. A verseny alatt 60 m gáton, súlylökésben és az összesített eredményével az egyéni legjobbját teljesítette.</p>
+                    <a href="#" class="btn btn-success btn-block">Megnézem</a>
+                    </div>
+                    
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -127,7 +138,7 @@
         <div class="row">
         <div class="col-12 col-md-6">
             <h4 class="text-center">Fedett pályás EB eredményeik:</h4>
-            <table class="table table-dark table-sm table-hover table-striped">
+            <table class="table table-secondary table-sm table-hover table-striped">
                 <thead>
                     <tr>
                         <th>Név</th>
@@ -209,7 +220,12 @@
                         <td>2021</td>
                         <td>3.</td>
                     </tr>
-            
+                    <tr>
+                        <td>Németh Roland</td>
+                        <td>magasugrás</td>
+                        <td>2017</td>
+                        <td>9.</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -220,11 +236,11 @@
                 <div class="form-row mb-2">
                     <div class="col">
                         <label for="kg">Súly:</label>
-                        <input type="text" class="form-control" placeholder="kg" id="kg">
+                        <input type="number" class="form-control" placeholder="kg" id="kg">
                     </div>
                     <div class="col">
                         <label for="perc">Idő:</label>
-                        <input type="text" class="form-control" placeholder="perc" id="perc">
+                        <input type="number" class="form-control" placeholder="perc" id="perc">
                     </div>
                 </div>
                 
@@ -237,7 +253,8 @@
                     </select>
                 </div>
                 <p id='kcal'></p>
-                <button type="button"  class="btn btn-primary btn-block">Kiszámol</button>
+                <button type="button"  class="btn btn-primary btn-block" onclick="energiaKalkulalas();">Kiszámol</button>
+                <p id="eredmeny"></p>
             </form> 
         </div>
 
